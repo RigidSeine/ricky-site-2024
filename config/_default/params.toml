@@ -5,8 +5,8 @@ rssFullContent = true
 favicon = "p4sun-150-150.png"
 
 [footer]
-since = 2020
-customText = ""
+since = 2024
+customText = "<i>Persona</i>"
 
 [dateFormat]
 published = "Jan 02, 2006"
