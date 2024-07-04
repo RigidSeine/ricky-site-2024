@@ -1,5 +1,6 @@
 ---
 title: HackTheBox Business Capture The Flag (CTF) 2024
+description: I participated in a hacking competition but didn't end up like Matthew Lillard :(
 date: 2024-07-01
 slug: htb-business-ctf-2024
 image: HTB_Cert.PNG
