@@ -5,6 +5,7 @@ date: 2024-07-03
 image: TenkiAme_preview_03-07-2024.png
 tags:
   - C#
+  - ASP.NET
   - CSS
   - HTML
   - nginx
