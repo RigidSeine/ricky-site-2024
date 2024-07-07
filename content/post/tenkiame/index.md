@@ -23,7 +23,6 @@ links:
 TenkiAme (pronounced ten-key-ah-meh) is a weather forecasting application that integrates with various APIs to provide weather and UV index information. You can access it at [tenkiame.org](https://tenkiame.org).
 
 I wanted to build this because of a couple of reasons:
-- I was influenced by the 2012 videogame Persona 4 Golden which utilises the weather as not only a prominent game mechanic but a heavy story and theme element.
 - Weather apps feel like a good kind of app to tick off when it comes to building personal projects.
 - I also wanted an excuse to build a web app in C# - a language I'm fond of from my Unity days.
 
