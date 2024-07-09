@@ -7,6 +7,9 @@ links:
   - title: Recap of Makemore
     website: https://rigidseine.github.io/leong-building-makemore/
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+tags:
+    - AI
+    - Python
 ---
 
 This project was a step in my journey to learn more about Artificial Intelligence (AI). It's not quite as fancy as ChatGPT, but it's still an AI model that uses deep learning aka a neural network.
