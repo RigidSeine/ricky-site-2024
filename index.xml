@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ricky Leong</title><link>https://blog.tenkiame.org/</link><description>Recent content on Ricky Leong</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 09 Jul 2024 18:32:45 +1200</lastBuildDate><atom:link href="https://blog.tenkiame.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome</title><link>https://blog.tenkiame.org/p/welcome/</link><pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/welcome/</guid><description>&lt;img src="https://blog.tenkiame.org/p/welcome/cover.jpg" alt="Featured image of post Welcome" />&lt;p>Hello! My name is Ricky and I&amp;rsquo;m a software developer.&lt;/p>
+&lt;p>This site is more of a portfolio more than it is my blog.&lt;/p>
+&lt;p>We&amp;rsquo;re all very busy people so each post will be (technically) be a one-minute read - unless I post a tutorial🤔&lt;/p>
+&lt;p>This post also fits in a tweet!&lt;/p></description></item><item><title>Makemore</title><link>https://blog.tenkiame.org/p/makemore/</link><pubDate>Tue, 09 Jul 2024 18:32:45 +1200</pubDate><guid>https://blog.tenkiame.org/p/makemore/</guid><description>&lt;img src="https://blog.tenkiame.org/p/makemore/makemore_preview.png" alt="Featured image of post Makemore" />&lt;p>This project was a step in my journey to learn more about Artificial Intelligence (AI). It&amp;rsquo;s not quite as fancy as ChatGPT, but it&amp;rsquo;s still an AI model that uses deep learning aka a neural network.
+Makemore is the name of the model - it&amp;rsquo;s a model that&amp;rsquo;s trained on American names and the idea is that it can generalise and create &amp;ldquo;name-like&amp;rdquo; words.&lt;/p>
+&lt;p>It&amp;rsquo;s good to be educated on AI to understand that while it&amp;rsquo;s useful, its capabilities and use cases in the public space thus far have not warranted the evangelism it&amp;rsquo;s gotten, and in some ways it exacerbates the very problems that AI was meant to solve (e.g. getting rid of spam).&lt;/p>
+&lt;p>Anyways, link below has the process of me putting together Makemore - it&amp;rsquo;s not intended to be a guide so it&amp;rsquo;s not the nicest read I&amp;rsquo;ve written. The repo also has Jupyter notebooks that can be run to use it, but in the future I&amp;rsquo;ll look to make something more user-friendly and doesn&amp;rsquo;t require additional setup. I hope to create more AI models in the future, but my current focus is upskilling in software development.&lt;/p></description></item><item><title>Guess the Country</title><link>https://blog.tenkiame.org/p/guess-the-country/</link><pubDate>Mon, 08 Jul 2024 17:42:59 +1200</pubDate><guid>https://blog.tenkiame.org/p/guess-the-country/</guid><description>&lt;img src="https://blog.tenkiame.org/p/guess-the-country/world-36479_640.png" alt="Featured image of post Guess the Country" />&lt;p>The goal of Guess the Country is, funnily enough, in the name. This was built during a time where I would do the Worldle on the daily. The most rewarding part was extracting all the different countries&amp;rsquo; svg images - this part was done using the C# HttpClient. Give it a try - a new country appears everytime you load the page 😊&lt;/p>
+&lt;p>[The image used is royalty-free from https://pixabay.com/vectors/world-geography-map-globe-earth-36479/]&lt;/p></description></item><item><title>Severed Sources</title><link>https://blog.tenkiame.org/p/severed-sources/</link><pubDate>Sun, 07 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/severed-sources/</guid><description>&lt;img src="https://blog.tenkiame.org/p/severed-sources/severed_sources_preview.png" alt="Featured image of post Severed Sources" />&lt;p>This game was built in a weekend not long before the COVID lockdown happened. Our team was composed entirely of strangers, three of whom were programmers and one artist. Because of this imbalance, I ended up taking more of a QA and Project Management role in the team, but it was still a fun time.
+I still remember staying late with one of the other team members and building the title screen and opening sequence from scratch. I&amp;rsquo;m very proud of the transition that happens when you hit the start button. I also named the game!&lt;/p>
+&lt;div>
+&lt;iframe src="https://rigidseine.github.io/nzgamejam2020-Robot-squad/" width="100%" height="680px" title="severed-sources" scrolling="no" overflow="hidden" overflow-y="hidden" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div></description></item><item><title>Maze Roller</title><link>https://blog.tenkiame.org/p/maze-roller/</link><pubDate>Thu, 04 Jul 2024 22:59:13 +1200</pubDate><guid>https://blog.tenkiame.org/p/maze-roller/</guid><description>&lt;img src="https://blog.tenkiame.org/p/maze-roller/MazeRoller_preview.png" alt="Featured image of post Maze Roller" />&lt;p>Maze Roller is a game where a player guides a ball from the start point to the goal point by rotating the maze a la the labyrinth marble game.
+The aim of this project was to implement an algorithm that procedurally generates a new maze on every game.
+The specific algorithm used for Maze Roller consisted of using quad-edges, a graph and its dual graph to build the maze, and depth-first search to traverse it.&lt;/p>
+&lt;h4>
+Click onto the game to take control. Use WASD keys to rotate the board and move the ball to the goal!
+&lt;/h4>
+&lt;h4>
+Press the 'r' key to reload the level and see the maze take on different forms.
+&lt;/h4>
+&lt;div>
+&lt;iframe src="https://rigidseine.github.io/MazeRoller/MazeGenBuild_1-1WebGL/" width="100%" height="680px" title="maze-gen" scrolling="no" overflow="hidden" allowfullscreen="true">
+&lt;/iframe>
+&lt;/div></description></item><item><title>Tenkiame</title><link>https://blog.tenkiame.org/p/tenkiame/</link><pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/tenkiame/</guid><description>&lt;img src="https://blog.tenkiame.org/p/tenkiame/TenkiAme_preview_03-07-2024.png" alt="Featured image of post Tenkiame" />&lt;p>TenkiAme (pronounced ten-key-ah-meh) is a weather forecasting application that integrates with various APIs to provide weather and UV index information. You can access it at &lt;a class="link" href="https://tenkiame.org" target="_blank" rel="noopener"
+>tenkiame.org&lt;/a>.&lt;/p>
+&lt;p>I wanted to build this because of a couple of reasons:&lt;/p>
+&lt;ul>
+&lt;li>Weather apps feel like a good kind of app to tick off when it comes to building personal projects.&lt;/li>
+&lt;li>I also wanted an excuse to build a web app in C# - a language I&amp;rsquo;m fond of from my Unity days.&lt;/li>
+&lt;/ul>
+&lt;p>The biggest learnings came from setting up the web server and deploying the app, more so than calling the APIs which I originally thought was going to be the most valuable piece of knowledge.&lt;/p>
+&lt;h2 id="licence">Licence
+&lt;/h2>&lt;p>This project is licensed under the MIT License.&lt;/p></description></item><item><title>HackTheBox Business Capture The Flag (CTF) 2024</title><link>https://blog.tenkiame.org/p/htb-business-ctf-2024/</link><pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/htb-business-ctf-2024/</guid><description>&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2024/HTB_Cert.PNG" alt="Featured image of post HackTheBox Business Capture The Flag (CTF) 2024" />&lt;p>In May 2024, our team of software developers and cybersecurity professionals from the Department of Corrections and NZ Police joined 943 others in the HackTheBox Business Capture The Flag(CTF) competition. Over half a week, we solved 20 challenging cybersecurity puzzles, each puzzle featuring a scenario themed around the Fallout video game series!&lt;/p>
+&lt;p>This competition was all about creative problem-solving and collaboration. Solving these challenges tested our problem-solving skills and taught us a few new tricks like XML entity inclusion, and mounting the file system in Windows Subsystem for Linux to find the system flag.&lt;/p>
+&lt;p>Participating in this event was a fun experience. We&amp;rsquo;re proud of our achievements and can&amp;rsquo;t wait for next year.
+Above this post is my certificate for competing.&lt;/p></description></item><item><title>Archives</title><link>https://blog.tenkiame.org/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/archives/</guid><description/></item><item><title>Links</title><link>https://blog.tenkiame.org/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/links/</guid><description>&lt;!-- To use this feature, add `links` section to frontmatter.
+This page's frontmatter:
+```yaml
+links:
+- title: GitHub
+description: GitHub is the world's largest software development platform.
+website: https://github.com
+image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+- title: TypeScript
+description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+website: https://www.typescriptlang.org
+image: ts-logo-128.jpg
+```
+`image` field accepts both local and external images. --></description></item><item><title>Search</title><link>https://blog.tenkiame.org/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/search/</guid><description/></item></channel></rss>
