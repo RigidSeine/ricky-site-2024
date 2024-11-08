@@ -1,6 +1,6 @@
 ---
 title: HackTheBoo! Capture The Flag (CTF) 2024
-description: I participated in a hacking competition but didn't end up like Matthew Lillard :(
+description: I participated in a hacking competition again and I still didn't end up like Matthew Lillard :(
 date: 2024-11-07
 slug: hack-the-boo-2024
 image: HTBoo-Cert.PNG
