@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C# on Ricky Leong</title><link>https://blog.tenkiame.org/tags/c%23/</link><description>Recent content in C# on Ricky Leong</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 08 Jul 2024 17:42:59 +1200</lastBuildDate><atom:link href="https://blog.tenkiame.org/tags/c%23/index.xml" rel="self" type="application/rss+xml"/><item><title>Guess the Country</title><link>https://blog.tenkiame.org/p/guess-the-country/</link><pubDate>Mon, 08 Jul 2024 17:42:59 +1200</pubDate><guid>https://blog.tenkiame.org/p/guess-the-country/</guid><description>&lt;img src="https://blog.tenkiame.org/p/guess-the-country/world-36479_640.png" alt="Featured image of post Guess the Country" /&gt;&lt;p&gt;The goal of Guess the Country is, funnily enough, in the name. This was built during a time where I would do the Worldle on the daily. The most rewarding part was extracting all the different countries&amp;rsquo; svg images - this part was done using the C# HttpClient. Give it a try - a new country appears everytime you load the page 😊&lt;/p&gt;
+&lt;p&gt;[The image used is royalty-free from https://pixabay.com/vectors/world-geography-map-globe-earth-36479/]&lt;/p&gt;</description></item><item><title>Severed Sources</title><link>https://blog.tenkiame.org/p/severed-sources/</link><pubDate>Sun, 07 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/severed-sources/</guid><description>&lt;img src="https://blog.tenkiame.org/p/severed-sources/severed_sources_preview.png" alt="Featured image of post Severed Sources" /&gt;&lt;p&gt;This game was built in a weekend not long before the COVID lockdown happened. Our team was composed entirely of strangers, three of whom were programmers and one artist. Because of this imbalance, I ended up taking more of a QA and Project Management role in the team, but it was still a fun time.
+I still remember staying late with one of the other team members and building the title screen and opening sequence from scratch. I&amp;rsquo;m very proud of the transition that happens when you hit the start button. I also named the game!&lt;/p&gt;
+&lt;div&gt;
+&lt;iframe src="https://rigidseine.github.io/nzgamejam2020-Robot-squad/" width="100%" height="680px" title="severed-sources" scrolling="no" overflow="hidden" overflow-y="hidden" allowfullscreen="true"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Maze Roller</title><link>https://blog.tenkiame.org/p/maze-roller/</link><pubDate>Thu, 04 Jul 2024 22:59:13 +1200</pubDate><guid>https://blog.tenkiame.org/p/maze-roller/</guid><description>&lt;img src="https://blog.tenkiame.org/p/maze-roller/MazeRoller_preview.png" alt="Featured image of post Maze Roller" /&gt;&lt;p&gt;Maze Roller is a game where a player guides a ball from the start point to the goal point by rotating the maze a la the labyrinth marble game.
+The aim of this project was to implement an algorithm that procedurally generates a new maze on every game.
+The specific algorithm used for Maze Roller consisted of using quad-edges, a graph and its dual graph to build the maze, and depth-first search to traverse it.&lt;/p&gt;
+&lt;h4&gt;
+Click onto the game to take control. Use WASD keys to rotate the board and move the ball to the goal!
+&lt;/h4&gt;
+&lt;h4&gt;
+Press the 'r' key to reload the level and see the maze take on different forms.
+&lt;/h4&gt;
+&lt;div&gt;
+&lt;iframe src="https://rigidseine.github.io/MazeRoller/MazeGenBuild_1-1WebGL/" width="100%" height="680px" title="maze-gen" scrolling="no" overflow="hidden" allowfullscreen="true"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Tenkiame</title><link>https://blog.tenkiame.org/p/tenkiame/</link><pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/tenkiame/</guid><description>&lt;img src="https://blog.tenkiame.org/p/tenkiame/TenkiAme_preview_03-07-2024.png" alt="Featured image of post Tenkiame" /&gt;&lt;p&gt;TenkiAme (pronounced ten-key-ah-meh) is a weather forecasting application that integrates with various APIs to provide weather and UV index information. You can access it at &lt;a class="link" href="https://tenkiame.org" target="_blank" rel="noopener"
+&gt;tenkiame.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I wanted to build this because of a couple of reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Weather apps feel like a good kind of app to tick off when it comes to building personal projects.&lt;/li&gt;
+&lt;li&gt;I also wanted an excuse to build a web app in C# - a language I&amp;rsquo;m fond of from my Unity days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest learnings came from setting up the web server and deploying the app, more so than calling the APIs which I originally thought was going to be the most valuable piece of knowledge.&lt;/p&gt;
+&lt;h2 id="licence"&gt;Licence
+&lt;/h2&gt;&lt;p&gt;This project is licensed under the MIT License.&lt;/p&gt;</description></item></channel></rss>

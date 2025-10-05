@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nginx on Ricky Leong</title><link>https://blog.tenkiame.org/tags/nginx/</link><description>Recent content in Nginx on Ricky Leong</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.tenkiame.org/tags/nginx/index.xml" rel="self" type="application/rss+xml"/><item><title>Tenkiame</title><link>https://blog.tenkiame.org/p/tenkiame/</link><pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/tenkiame/</guid><description>&lt;img src="https://blog.tenkiame.org/p/tenkiame/TenkiAme_preview_03-07-2024.png" alt="Featured image of post Tenkiame" /&gt;&lt;p&gt;TenkiAme (pronounced ten-key-ah-meh) is a weather forecasting application that integrates with various APIs to provide weather and UV index information. You can access it at &lt;a class="link" href="https://tenkiame.org" target="_blank" rel="noopener"
+&gt;tenkiame.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I wanted to build this because of a couple of reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Weather apps feel like a good kind of app to tick off when it comes to building personal projects.&lt;/li&gt;
+&lt;li&gt;I also wanted an excuse to build a web app in C# - a language I&amp;rsquo;m fond of from my Unity days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest learnings came from setting up the web server and deploying the app, more so than calling the APIs which I originally thought was going to be the most valuable piece of knowledge.&lt;/p&gt;
+&lt;h2 id="licence"&gt;Licence
+&lt;/h2&gt;&lt;p&gt;This project is licensed under the MIT License.&lt;/p&gt;</description></item></channel></rss>

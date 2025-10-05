@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DevOps on Ricky Leong</title><link>https://blog.tenkiame.org/tags/devops/</link><description>Recent content in DevOps on Ricky Leong</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.tenkiame.org/tags/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Dockerising an App to do CI/CD</title><link>https://blog.tenkiame.org/p/chat-less-ci-cd/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/chat-less-ci-cd/</guid><description>&lt;img src="https://blog.tenkiame.org/p/chat-less-ci-cd/rake.png" alt="Featured image of post Dockerising an App to do CI/CD" /&gt;&lt;p&gt;The goal at the beginning of this project was to create a &lt;strong&gt;Continuous Integration/Continuous Deployment&lt;/strong&gt; or &lt;strong&gt;CI/CD pipeline&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In short, it was a success! I can now make changes to the code, test the changes, push the changes to Github and this pipeline handles pushing the changes to the &lt;a class="link" href="https://chat.tenkiame.org/" target="_blank" rel="noopener"
+&gt;Chat Less&lt;/a&gt; app that I made.&lt;/p&gt;
+&lt;p&gt;Part of it, however, was thinking I&amp;rsquo;d need to migrate the app to &lt;a class="link" href="https://www.docker.com/" target="_blank" rel="noopener"
+&gt;Docker&lt;/a&gt; containers before I could achieve this. This is not true at all, but learning about Docker was also on the list so I was able to kill two birds with one stone. In fact, learning about and migrating to Docker probably took up 90% of the project time. Time well spent. I think.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/chat-less-ci-cd/architecture.png"
+width="1141"
+height="538"
+srcset="https://blog.tenkiame.org/p/chat-less-ci-cd/architecture_hu_8e962f3c3a02069e.png 480w, https://blog.tenkiame.org/p/chat-less-ci-cd/architecture_hu_7c396672d548df15.png 1024w"
+loading="lazy"
+alt="Docker setup now that Chat Less has moved to containers"
+class="gallery-image"
+data-flex-grow="212"
+data-flex-basis="508px"
+&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;CI&lt;/strong&gt; part of the pipeline starts with building the &lt;a class="link" href="https://www.geeksforgeeks.org/devops/what-is-docker-image/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Docker Image&lt;/strong&gt;&lt;/a&gt; using a &lt;a class="link" href="https://www.geeksforgeeks.org/cloud-computing/what-is-dockerfile/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Dockerfile&lt;/strong&gt;&lt;/a&gt; and the code from the latest commit in the app&amp;rsquo;s repo.&lt;/p&gt;
+&lt;p&gt;Then the &lt;strong&gt;Docker Image&lt;/strong&gt; is pushed to an &lt;strong&gt;image registry&lt;/strong&gt; (an image storage), in this case it&amp;rsquo;s &lt;a class="link" href="https://hub.docker.com/" target="_blank" rel="noopener"
+&gt;Dockerhub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;CD&lt;/strong&gt; part of the pipeline is then &amp;ldquo;remoting in&amp;rdquo; to my remote server, pulling the &lt;strong&gt;Docker Image&lt;/strong&gt; from Dockerhub and restarting the &lt;strong&gt;Docker containers&lt;/strong&gt; using said images.&lt;/p&gt;
+&lt;p&gt;In my swimlane flow diagram, there&amp;rsquo;s mention of &lt;strong&gt;Docker Compose&lt;/strong&gt; - this feature of Docker defines and manages behaviour for using multiple containers. It&amp;rsquo;s incorporated since Chat Less is split into a back-end container and front-end container (see the Docker setup diagram).&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/chat-less-ci-cd/ci-cd-pipeline-flow.png"
+width="1458"
+height="799"
+srcset="https://blog.tenkiame.org/p/chat-less-ci-cd/ci-cd-pipeline-flow_hu_14e248695fb682d2.png 480w, https://blog.tenkiame.org/p/chat-less-ci-cd/ci-cd-pipeline-flow_hu_dd3d353e1cf4cc54.png 1024w"
+loading="lazy"
+alt="Swimlane Flow Diagram of how the CI/CD pipeline works"
+class="gallery-image"
+data-flex-grow="182"
+data-flex-basis="437px"
+&gt;&lt;/p&gt;</description></item></channel></rss>

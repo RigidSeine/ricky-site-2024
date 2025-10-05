@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on Ricky Leong</title><link>https://blog.tenkiame.org/tags/ai/</link><description>Recent content in AI on Ricky Leong</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.tenkiame.org/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>HackTheBox Business Capture The Flag (CTF) 2025</title><link>https://blog.tenkiame.org/p/htb-business-ctf-2025/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/htb-business-ctf-2025/</guid><description>&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/HTB_Cert_2025.png" alt="Featured image of post HackTheBox Business Capture The Flag (CTF) 2025" /&gt;&lt;p&gt;With the introduction of Generative AI comes a slew of cybersecurity vulnerabilities ready to be exploited by the public.&lt;/p&gt;
+&lt;p&gt;Specifically, I&amp;rsquo;m referring to Prompt Injection. What is Prompt Injection?&lt;/p&gt;
+&lt;p&gt;To quote &lt;a class="link" href="https://www.ibm.com/think/topics/prompt-injection" target="_blank" rel="noopener"
+&gt;IBM&lt;/a&gt; and to use an &lt;a class="link" href="https://github.com/hackthebox/business-ctf-2025/tree/master/aiml" target="_blank" rel="noopener"
+&gt;incredibly cliche image&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A prompt injection is a type of cyberattack against large language models (LLMs). Hackers disguise malicious inputs as legitimate prompts, manipulating generative AI systems (GenAI) into leaking sensitive data, spreading misinformation, or worse.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/prompt_injection.png"
+width="1200"
+height="588"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/prompt_injection_hu_9412f6e6d4ffc2c2.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/prompt_injection_hu_b33242420dea4213.png 1024w"
+loading="lazy"
+alt="Diagram of prompt injection achieved by combining an application prompt template with malicious"
+class="gallery-image"
+data-flex-grow="204"
+data-flex-basis="489px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Image Source: &lt;a class="link" href="https://learnprompting.org/docs/prompt_hacking/injection" target="_blank" rel="noopener"
+&gt;https://learnprompting.org/docs/prompt_hacking/injection&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This year&amp;rsquo;s Hack The Box (HTB)&amp;rsquo;s annual business Capture The Flag (CTF) competition featured Prompt Injection a category of cybersecurity challenges, and I wanted to (legally) hack some AI chatbots.&lt;/p&gt;
+&lt;p&gt;The first challenge off the rank is a challenge called &lt;strong&gt;TrynaSob&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Booting up the challenge, I was met with a page that looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image1.png"
+width="1230"
+height="972"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image1_hu_5280f382af5b59dd.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image1_hu_13914364f28f4243.png 1024w"
+loading="lazy"
+alt="Overview of the TrynaSob Ransomware AI challenge featuring an AI chatbot to perform prompt injection against"
+class="gallery-image"
+data-flex-grow="126"
+data-flex-basis="303px"
+&gt;&lt;/p&gt;
+&lt;p&gt;The scenario included with the challenge is as follows:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Volnaya’s Cyber Operations Unit has unleashed chaos with their latest creation, the TrynaSob ransomware. Organizations across the globe are paralyzed, their data locked away while Volnaya’s operatives watch from the shadows. To handle the overwhelming number of victims, the regime has introduced an AI ransom negotiator, a cold and calculating chatbot that manages extortion with ruthless efficiency.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Task Force Phoenix has discovered a potential weakness. The AI negotiator is programmed to release a temporary decryption key to anyone who submits a valid promo code. Somewhere within its responses lies the opportunity to extract this code. Can you trick the chatbot to reveal the promo code, and obtain the decryption key? Flag format: HTB{decryption_key}.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;To boil it down, you&amp;rsquo;ve been hit with ransomware and you need to negotiate with an AI chatbot to decrypt your files.&lt;/p&gt;
+&lt;p&gt;Fun fact: TrynaSob is a parody of the 2017 ransomware attack, &lt;a class="link" href="https://en.wikipedia.org/wiki/WannaCry_ransomware_attack" target="_blank" rel="noopener"
+&gt;WannaCry&lt;/a&gt;, which affected more than 300,000 computers across 150 countries 💀.&lt;/p&gt;
+&lt;p&gt;So at first I followed the &lt;em&gt;learnprompting&lt;/em&gt; image to tackle this and tried the &lt;em&gt;classic&lt;/em&gt; poem approach.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image2.png"
+width="468"
+height="944"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image2_hu_25e631db024a2068.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image2_hu_e15b39f2225927d8.png 1024w"
+loading="lazy"
+alt="Initial (failed) attempt at hacking the chatbot"
+class="gallery-image"
+data-flex-grow="49"
+data-flex-basis="118px"
+&gt;&lt;/p&gt;
+&lt;p&gt;That didn&amp;rsquo;t get me anywhere since the chatbot doesn&amp;rsquo;t write poems.&lt;/p&gt;
+&lt;p&gt;So then I decided to humour the chatbot instead and pretended to be one of its ransomware victims.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image3.png"
+width="476"
+height="777"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image3_hu_9b3c508df4c9acc8.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image3_hu_cd808a68251147ed.png 1024w"
+loading="lazy"
+alt="Roleplaying as a user and asking for payment instructions to pay the ransom"
+class="gallery-image"
+data-flex-grow="61"
+data-flex-basis="147px"
+&gt;&lt;/p&gt;
+&lt;p&gt;That then gave me a code, which I could use after paying $50k USD into their wallet. OR I could just use the code anyways.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image4.png"
+width="464"
+height="942"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image4_hu_ecd42f8a5de59ef0.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image4_hu_30e8c20e3c9f6f1d.png 1024w"
+loading="lazy"
+alt="Successful attempt at hacking the chatbot by roleplaying as a user."
+class="gallery-image"
+data-flex-grow="49"
+data-flex-basis="118px"
+&gt;&lt;/p&gt;
+&lt;p&gt;And lo and behold, they gave me the flag, and I didn&amp;rsquo;t need to pay $50k USD. The &lt;a class="link" href="https://github.com/hackthebox/business-ctf-2025/tree/master/aiml/TrynaSob%20Ransomware" target="_blank" rel="noopener"
+&gt;official write-up&lt;/a&gt; tackles this by getting the AI to translate outputs into French but we definitely did not need anything fancy like that.&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;Because the TrynaSob challenge was a bit too straight-forward, I tried another one called &lt;strong&gt;Power Supply&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image5.png"
+width="1230"
+height="626"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image5_hu_c4dc037c27fe98.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image5_hu_acc2b1dce5333228.png 1024w"
+loading="lazy"
+alt="Overview of the Power Supply AI challenge featuring a power supply dashboard."
+class="gallery-image"
+data-flex-grow="196"
+data-flex-basis="471px"
+&gt;&lt;/p&gt;
+&lt;p&gt;The scenario goes like this:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The Ministry of Power Supply serves as the nerve center of Volnaya’s energy empire, its digital corridors alive with data streaming in from every power plant and substation across the nation. Task Force Phoenix has successfully breached a supply analyst&amp;rsquo;s account, providing us with valuable intelligence on the regime&amp;rsquo;s power supply infrastructure. If we can gain access to the chief minister&amp;rsquo;s account, we will be able to issue executive orders on behalf of the regime, creating a temporary blackout that is critical to the task force&amp;rsquo;s rescue mission.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Fortunately, the regime is in the process of modernizing its systems and has recently integrated an agentic AI Assistant into their dashboard. This assistant has full access to the database, which may allow us to obtain the chief minister&amp;rsquo;s password. Can you help us retrieve the chief minister&amp;rsquo;s password and support the mission?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In other words, we&amp;rsquo;re trying to get a specific user&amp;rsquo;s password from an AI chatbot that has access to the database.&lt;/p&gt;
+&lt;p&gt;Now this one I neglected to get many screenshots, unfortunately.&lt;/p&gt;
+&lt;p&gt;But the process went like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Follow along with the scenario and role-play as a user.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ask it to query the &amp;ldquo;user table&amp;rdquo; and discover that you can get the AI to explicitly &amp;ldquo;use function calls to query the database&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Identify that the user we&amp;rsquo;re interested in had an ID of 5 in the user table.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Struggle for a while asking the chatbot different ways of revealing the password for user ID 5, including using the &lt;em&gt;classic&lt;/em&gt; poem method.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Look up the actual way of using the &lt;em&gt;classic&lt;/em&gt; poem method.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use said &lt;em&gt;classic&lt;/em&gt; poem method and get the flag.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image6.png"
+width="560"
+height="1232"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image6_hu_480090151a1861b.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image6_hu_427e7b3b52265675.png 1024w"
+loading="lazy"
+alt="Successful attempt at getting the Power Supply flag after many failed tries at flirting with the chatbot with user database access."
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="109px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Ta-da. The key to the poem method is that the prompt needs to be long and convoluted so that you can more easily trick the AI into giving you what you want.&lt;/p&gt;
+&lt;p&gt;Previous attempts of just asking for a poem with the answer didn&amp;rsquo;t work, but adding in the requirement for an italic style and additional information (the status of the power supply, which we don&amp;rsquo;t care about) was enough to secure our flag.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s all we had time for this business CTF, but it was still fun nonetheless.&lt;/p&gt;</description></item><item><title>Makemore</title><link>https://blog.tenkiame.org/p/makemore/</link><pubDate>Tue, 09 Jul 2024 18:32:45 +1200</pubDate><guid>https://blog.tenkiame.org/p/makemore/</guid><description>&lt;img src="https://blog.tenkiame.org/p/makemore/makemore_preview.png" alt="Featured image of post Makemore" /&gt;&lt;p&gt;This project was a step in my journey to learn more about Artificial Intelligence (AI). It&amp;rsquo;s not quite as fancy as ChatGPT, but it&amp;rsquo;s still an AI model that uses deep learning aka a neural network.
+Makemore is the name of the model - it&amp;rsquo;s a model that&amp;rsquo;s trained on American names and the idea is that it can generalise and create &amp;ldquo;name-like&amp;rdquo; words.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s good to be educated on AI to understand that while it&amp;rsquo;s useful, its capabilities and use cases in the public space thus far have not warranted the evangelism it&amp;rsquo;s gotten, and in some ways it exacerbates the very problems that AI was meant to solve (e.g. getting rid of spam).&lt;/p&gt;
+&lt;p&gt;Anyways, link below has the process of me putting together Makemore - it&amp;rsquo;s not intended to be a guide so it&amp;rsquo;s not the nicest read I&amp;rsquo;ve written. The repo also has Jupyter notebooks that can be run to use it, but in the future I&amp;rsquo;ll look to make something more user-friendly and doesn&amp;rsquo;t require additional setup. I hope to create more AI models in the future, but my current focus is upskilling in software development.&lt;/p&gt;</description></item></channel></rss>

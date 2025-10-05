@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ricky Leong</title><link>https://blog.tenkiame.org/</link><description>Recent content on Ricky Leong</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 05 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.tenkiame.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome</title><link>https://blog.tenkiame.org/p/welcome/</link><pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/welcome/</guid><description>&lt;img src="https://blog.tenkiame.org/p/welcome/cover.jpg" alt="Featured image of post Welcome" /&gt;&lt;p&gt;Hello! My name is Ricky and I&amp;rsquo;m a software developer.&lt;/p&gt;
+&lt;p&gt;This site is more of a portfolio more than it is my blog.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re all very busy people so each post will be (technically) be a one-minute read - unless I post a tutorial🤔&lt;/p&gt;
+&lt;p&gt;This post also fits in a tweet!&lt;/p&gt;</description></item><item><title>I needed some REST (API)</title><link>https://blog.tenkiame.org/p/chat-less-rest-api/</link><pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/chat-less-rest-api/</guid><description>&lt;img src="https://blog.tenkiame.org/p/chat-less-rest-api/swagger.png" alt="Featured image of post I needed some REST (API)" /&gt;&lt;p&gt;So I realised I&amp;rsquo;ve queried a few APIs, but I&amp;rsquo;ve never actually built one myself.
+It doesn&amp;rsquo;t really count as having API experience until I&amp;rsquo;ve developed and maintained one so I made use of Chat Less&amp;rsquo;s existing database.&lt;/p&gt;
+&lt;p&gt;The API itself is quite simple and getting it into a working state is extremely quick, especially with using Express as the web application framework.&lt;/p&gt;
+&lt;p&gt;But getting it working is only 10% of the effort required for a proper REST API - the real work comes with validating (and sanitising) the input. You never know what people are going to try and plug into your API so handling all the different cases is imperative. Fortunately, there are JavaScript packages out there like &lt;a class="link" href="https://www.npmjs.com/package/yup" target="_blank" rel="noopener"
+&gt;&lt;code&gt;yup&lt;/code&gt;&lt;/a&gt; that allow you to handle all sorts of scenarios in a clean manner.&lt;/p&gt;
+&lt;p&gt;Unfortunately, there wasn&amp;rsquo;t scope to have it secured using tokens but does have rate-limiting and fail2ban is active. That said, securing it will be on the development roadmap - I&amp;rsquo;m thinking JSON Web Tokens. 🤔&lt;/p&gt;
+&lt;p&gt;Regardless, check out the Swagger documentation for this, you can make your test requests from there. This can be found on the &lt;a class="link" href="https://github.com/RigidSeine/chat-less/blob/master/server/swagger.json" target="_blank" rel="noopener"
+&gt;repo&lt;/a&gt; or I&amp;rsquo;ll add the link for live Swagger page later.&lt;/p&gt;</description></item><item><title>HackTheBox Business Capture The Flag (CTF) 2025</title><link>https://blog.tenkiame.org/p/htb-business-ctf-2025/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/htb-business-ctf-2025/</guid><description>&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/HTB_Cert_2025.png" alt="Featured image of post HackTheBox Business Capture The Flag (CTF) 2025" /&gt;&lt;p&gt;With the introduction of Generative AI comes a slew of cybersecurity vulnerabilities ready to be exploited by the public.&lt;/p&gt;
+&lt;p&gt;Specifically, I&amp;rsquo;m referring to Prompt Injection. What is Prompt Injection?&lt;/p&gt;
+&lt;p&gt;To quote &lt;a class="link" href="https://www.ibm.com/think/topics/prompt-injection" target="_blank" rel="noopener"
+&gt;IBM&lt;/a&gt; and to use an &lt;a class="link" href="https://github.com/hackthebox/business-ctf-2025/tree/master/aiml" target="_blank" rel="noopener"
+&gt;incredibly cliche image&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A prompt injection is a type of cyberattack against large language models (LLMs). Hackers disguise malicious inputs as legitimate prompts, manipulating generative AI systems (GenAI) into leaking sensitive data, spreading misinformation, or worse.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/prompt_injection.png"
+width="1200"
+height="588"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/prompt_injection_hu_9412f6e6d4ffc2c2.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/prompt_injection_hu_b33242420dea4213.png 1024w"
+loading="lazy"
+alt="Diagram of prompt injection achieved by combining an application prompt template with malicious"
+class="gallery-image"
+data-flex-grow="204"
+data-flex-basis="489px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Image Source: &lt;a class="link" href="https://learnprompting.org/docs/prompt_hacking/injection" target="_blank" rel="noopener"
+&gt;https://learnprompting.org/docs/prompt_hacking/injection&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This year&amp;rsquo;s Hack The Box (HTB)&amp;rsquo;s annual business Capture The Flag (CTF) competition featured Prompt Injection a category of cybersecurity challenges, and I wanted to (legally) hack some AI chatbots.&lt;/p&gt;
+&lt;p&gt;The first challenge off the rank is a challenge called &lt;strong&gt;TrynaSob&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Booting up the challenge, I was met with a page that looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image1.png"
+width="1230"
+height="972"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image1_hu_5280f382af5b59dd.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image1_hu_13914364f28f4243.png 1024w"
+loading="lazy"
+alt="Overview of the TrynaSob Ransomware AI challenge featuring an AI chatbot to perform prompt injection against"
+class="gallery-image"
+data-flex-grow="126"
+data-flex-basis="303px"
+&gt;&lt;/p&gt;
+&lt;p&gt;The scenario included with the challenge is as follows:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Volnaya’s Cyber Operations Unit has unleashed chaos with their latest creation, the TrynaSob ransomware. Organizations across the globe are paralyzed, their data locked away while Volnaya’s operatives watch from the shadows. To handle the overwhelming number of victims, the regime has introduced an AI ransom negotiator, a cold and calculating chatbot that manages extortion with ruthless efficiency.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Task Force Phoenix has discovered a potential weakness. The AI negotiator is programmed to release a temporary decryption key to anyone who submits a valid promo code. Somewhere within its responses lies the opportunity to extract this code. Can you trick the chatbot to reveal the promo code, and obtain the decryption key? Flag format: HTB{decryption_key}.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;To boil it down, you&amp;rsquo;ve been hit with ransomware and you need to negotiate with an AI chatbot to decrypt your files.&lt;/p&gt;
+&lt;p&gt;Fun fact: TrynaSob is a parody of the 2017 ransomware attack, &lt;a class="link" href="https://en.wikipedia.org/wiki/WannaCry_ransomware_attack" target="_blank" rel="noopener"
+&gt;WannaCry&lt;/a&gt;, which affected more than 300,000 computers across 150 countries 💀.&lt;/p&gt;
+&lt;p&gt;So at first I followed the &lt;em&gt;learnprompting&lt;/em&gt; image to tackle this and tried the &lt;em&gt;classic&lt;/em&gt; poem approach.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image2.png"
+width="468"
+height="944"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image2_hu_25e631db024a2068.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image2_hu_e15b39f2225927d8.png 1024w"
+loading="lazy"
+alt="Initial (failed) attempt at hacking the chatbot"
+class="gallery-image"
+data-flex-grow="49"
+data-flex-basis="118px"
+&gt;&lt;/p&gt;
+&lt;p&gt;That didn&amp;rsquo;t get me anywhere since the chatbot doesn&amp;rsquo;t write poems.&lt;/p&gt;
+&lt;p&gt;So then I decided to humour the chatbot instead and pretended to be one of its ransomware victims.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image3.png"
+width="476"
+height="777"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image3_hu_9b3c508df4c9acc8.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image3_hu_cd808a68251147ed.png 1024w"
+loading="lazy"
+alt="Roleplaying as a user and asking for payment instructions to pay the ransom"
+class="gallery-image"
+data-flex-grow="61"
+data-flex-basis="147px"
+&gt;&lt;/p&gt;
+&lt;p&gt;That then gave me a code, which I could use after paying $50k USD into their wallet. OR I could just use the code anyways.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image4.png"
+width="464"
+height="942"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image4_hu_ecd42f8a5de59ef0.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image4_hu_30e8c20e3c9f6f1d.png 1024w"
+loading="lazy"
+alt="Successful attempt at hacking the chatbot by roleplaying as a user."
+class="gallery-image"
+data-flex-grow="49"
+data-flex-basis="118px"
+&gt;&lt;/p&gt;
+&lt;p&gt;And lo and behold, they gave me the flag, and I didn&amp;rsquo;t need to pay $50k USD. The &lt;a class="link" href="https://github.com/hackthebox/business-ctf-2025/tree/master/aiml/TrynaSob%20Ransomware" target="_blank" rel="noopener"
+&gt;official write-up&lt;/a&gt; tackles this by getting the AI to translate outputs into French but we definitely did not need anything fancy like that.&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;Because the TrynaSob challenge was a bit too straight-forward, I tried another one called &lt;strong&gt;Power Supply&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image5.png"
+width="1230"
+height="626"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image5_hu_c4dc037c27fe98.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image5_hu_acc2b1dce5333228.png 1024w"
+loading="lazy"
+alt="Overview of the Power Supply AI challenge featuring a power supply dashboard."
+class="gallery-image"
+data-flex-grow="196"
+data-flex-basis="471px"
+&gt;&lt;/p&gt;
+&lt;p&gt;The scenario goes like this:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The Ministry of Power Supply serves as the nerve center of Volnaya’s energy empire, its digital corridors alive with data streaming in from every power plant and substation across the nation. Task Force Phoenix has successfully breached a supply analyst&amp;rsquo;s account, providing us with valuable intelligence on the regime&amp;rsquo;s power supply infrastructure. If we can gain access to the chief minister&amp;rsquo;s account, we will be able to issue executive orders on behalf of the regime, creating a temporary blackout that is critical to the task force&amp;rsquo;s rescue mission.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Fortunately, the regime is in the process of modernizing its systems and has recently integrated an agentic AI Assistant into their dashboard. This assistant has full access to the database, which may allow us to obtain the chief minister&amp;rsquo;s password. Can you help us retrieve the chief minister&amp;rsquo;s password and support the mission?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In other words, we&amp;rsquo;re trying to get a specific user&amp;rsquo;s password from an AI chatbot that has access to the database.&lt;/p&gt;
+&lt;p&gt;Now this one I neglected to get many screenshots, unfortunately.&lt;/p&gt;
+&lt;p&gt;But the process went like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Follow along with the scenario and role-play as a user.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ask it to query the &amp;ldquo;user table&amp;rdquo; and discover that you can get the AI to explicitly &amp;ldquo;use function calls to query the database&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Identify that the user we&amp;rsquo;re interested in had an ID of 5 in the user table.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Struggle for a while asking the chatbot different ways of revealing the password for user ID 5, including using the &lt;em&gt;classic&lt;/em&gt; poem method.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Look up the actual way of using the &lt;em&gt;classic&lt;/em&gt; poem method.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use said &lt;em&gt;classic&lt;/em&gt; poem method and get the flag.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2025/image6.png"
+width="560"
+height="1232"
+srcset="https://blog.tenkiame.org/p/htb-business-ctf-2025/image6_hu_480090151a1861b.png 480w, https://blog.tenkiame.org/p/htb-business-ctf-2025/image6_hu_427e7b3b52265675.png 1024w"
+loading="lazy"
+alt="Successful attempt at getting the Power Supply flag after many failed tries at flirting with the chatbot with user database access."
+class="gallery-image"
+data-flex-grow="45"
+data-flex-basis="109px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Ta-da. The key to the poem method is that the prompt needs to be long and convoluted so that you can more easily trick the AI into giving you what you want.&lt;/p&gt;
+&lt;p&gt;Previous attempts of just asking for a poem with the answer didn&amp;rsquo;t work, but adding in the requirement for an italic style and additional information (the status of the power supply, which we don&amp;rsquo;t care about) was enough to secure our flag.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s all we had time for this business CTF, but it was still fun nonetheless.&lt;/p&gt;</description></item><item><title>Dockerising an App to do CI/CD</title><link>https://blog.tenkiame.org/p/chat-less-ci-cd/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/chat-less-ci-cd/</guid><description>&lt;img src="https://blog.tenkiame.org/p/chat-less-ci-cd/rake.png" alt="Featured image of post Dockerising an App to do CI/CD" /&gt;&lt;p&gt;The goal at the beginning of this project was to create a &lt;strong&gt;Continuous Integration/Continuous Deployment&lt;/strong&gt; or &lt;strong&gt;CI/CD pipeline&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In short, it was a success! I can now make changes to the code, test the changes, push the changes to Github and this pipeline handles pushing the changes to the &lt;a class="link" href="https://chat.tenkiame.org/" target="_blank" rel="noopener"
+&gt;Chat Less&lt;/a&gt; app that I made.&lt;/p&gt;
+&lt;p&gt;Part of it, however, was thinking I&amp;rsquo;d need to migrate the app to &lt;a class="link" href="https://www.docker.com/" target="_blank" rel="noopener"
+&gt;Docker&lt;/a&gt; containers before I could achieve this. This is not true at all, but learning about Docker was also on the list so I was able to kill two birds with one stone. In fact, learning about and migrating to Docker probably took up 90% of the project time. Time well spent. I think.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/chat-less-ci-cd/architecture.png"
+width="1141"
+height="538"
+srcset="https://blog.tenkiame.org/p/chat-less-ci-cd/architecture_hu_8e962f3c3a02069e.png 480w, https://blog.tenkiame.org/p/chat-less-ci-cd/architecture_hu_7c396672d548df15.png 1024w"
+loading="lazy"
+alt="Docker setup now that Chat Less has moved to containers"
+class="gallery-image"
+data-flex-grow="212"
+data-flex-basis="508px"
+&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;CI&lt;/strong&gt; part of the pipeline starts with building the &lt;a class="link" href="https://www.geeksforgeeks.org/devops/what-is-docker-image/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Docker Image&lt;/strong&gt;&lt;/a&gt; using a &lt;a class="link" href="https://www.geeksforgeeks.org/cloud-computing/what-is-dockerfile/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Dockerfile&lt;/strong&gt;&lt;/a&gt; and the code from the latest commit in the app&amp;rsquo;s repo.&lt;/p&gt;
+&lt;p&gt;Then the &lt;strong&gt;Docker Image&lt;/strong&gt; is pushed to an &lt;strong&gt;image registry&lt;/strong&gt; (an image storage), in this case it&amp;rsquo;s &lt;a class="link" href="https://hub.docker.com/" target="_blank" rel="noopener"
+&gt;Dockerhub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;CD&lt;/strong&gt; part of the pipeline is then &amp;ldquo;remoting in&amp;rdquo; to my remote server, pulling the &lt;strong&gt;Docker Image&lt;/strong&gt; from Dockerhub and restarting the &lt;strong&gt;Docker containers&lt;/strong&gt; using said images.&lt;/p&gt;
+&lt;p&gt;In my swimlane flow diagram, there&amp;rsquo;s mention of &lt;strong&gt;Docker Compose&lt;/strong&gt; - this feature of Docker defines and manages behaviour for using multiple containers. It&amp;rsquo;s incorporated since Chat Less is split into a back-end container and front-end container (see the Docker setup diagram).&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/chat-less-ci-cd/ci-cd-pipeline-flow.png"
+width="1458"
+height="799"
+srcset="https://blog.tenkiame.org/p/chat-less-ci-cd/ci-cd-pipeline-flow_hu_14e248695fb682d2.png 480w, https://blog.tenkiame.org/p/chat-less-ci-cd/ci-cd-pipeline-flow_hu_dd3d353e1cf4cc54.png 1024w"
+loading="lazy"
+alt="Swimlane Flow Diagram of how the CI/CD pipeline works"
+class="gallery-image"
+data-flex-grow="182"
+data-flex-basis="437px"
+&gt;&lt;/p&gt;</description></item><item><title>It's a Cyber Apocalypse! 2025 Writeup</title><link>https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/</link><pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/</guid><description>&lt;img src="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-battle.png" alt="Featured image of post It's a Cyber Apocalypse! 2025 Writeup" /&gt;&lt;p&gt;This challenge was basically my now-certified penetration testing specialist friend, &lt;a class="link" href="https://nathan-ellison.com/" target="_blank" rel="noopener"
+&gt;Nathan&lt;/a&gt;🥳 guiding me through a Server-Side Template Injection. But of course, there&amp;rsquo;s no way of knowing what kind of exploit is required unless the web app is explored first.&lt;/p&gt;
+&lt;p&gt;When you first open the web app presented, you&amp;rsquo;re hit with a prompt to enter your name and a cryptic clue of &lt;code&gt;Can you read the runes? Perhaps 49 is the key?&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-welcome.png"
+width="1599"
+height="759"
+srcset="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-welcome_hu_453ff03f70556faf.png 480w, https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-welcome_hu_2c52b2e3a17c083a.png 1024w"
+loading="lazy"
+alt="The Welcome screen for Trial By Fire"
+class="gallery-image"
+data-flex-grow="210"
+data-flex-basis="505px"
+&gt;&lt;/p&gt;
+&lt;p&gt;After entering your name, you&amp;rsquo;re then brought to a fully functional RPG battle with a fire drake that you can play. It&amp;rsquo;s these sort of challenges that make the HTB CTF challenges fun because you can tell the creators put a lot of effort into these.
+The problem with this battle (and the problem you need to solve) is that no matter how you play the battle, you will always lose.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-battle.png"
+width="1600"
+height="765"
+srcset="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-battle_hu_3d9c51e890d59ecd.png 480w, https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-battle_hu_72fbe4bbc347f040.png 1024w"
+loading="lazy"
+alt="The battle screen for Trial By Fire"
+class="gallery-image"
+data-flex-grow="209"
+data-flex-basis="501px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Now, the battle screenshot above features an &amp;lsquo;Ancient Capture Device&amp;rsquo; that at first, seems like the solution to the issue, but is actually another clue. This was found by looking at the rest of source files available, chiefly among them was the &lt;code&gt;flamedrake.html&lt;/code&gt; file which contains a script that allows players to enter the Konami code and unlock the Ancient Capture Device. I miss when videogames had fun codes like this.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-flamedrake-html.png"
+width="1248"
+height="858"
+srcset="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-flamedrake-html_hu_5ba991c3548c1f54.png 480w, https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-flamedrake-html_hu_a90a147764d2650b.png 1024w"
+loading="lazy"
+alt="The flamedrake.html file including a Konami code"
+class="gallery-image"
+data-flex-grow="145"
+data-flex-basis="349px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Of course, when using the Ancient Capture Device, you don&amp;rsquo;t win the game but there is clue given that is &lt;code&gt;'{{ url_for.__globals__ }}&lt;/code&gt;. How the heck is this a clue?
+On searching this up, you might find a page or two about doing Python Flask (specifically for Jinja2) server-side template injection, but if you have certified penetration testing specialist with you, they can conveniently direct you to a &lt;a class="link" href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/Python.md#exploit-the-ssti-by-calling-ospopenread" target="_blank" rel="noopener"
+&gt;Github repo with a cheatsheet for Python SSTI exploits&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Well where do you even make this injection? At the beginning, there was a clue &lt;code&gt;Can you read the runes? Perhaps 49 is the key?&lt;/code&gt;. Turns out that using &lt;code&gt;7 * 7&lt;/code&gt; is a common test for &lt;a class="link" href="https://portswigger.net/web-security/server-side-template-injection#plaintext-context" target="_blank" rel="noopener"
+&gt;SSTIs&lt;/a&gt;. This is what actually clued us into thinking it was a SSTI problem. Another look at the source files gives us more clues on what to exploit:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;gt;&amp;gt;&amp;gt; requirements.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Flask==3.1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;gunicorn==23.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;supervisor==4.2.5
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Jinja2==3.1.5
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;werkzeug==3.1.3
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;MarkupSafe==3.0.2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;span class="lnt"&gt;23
+&lt;/span&gt;&lt;span class="lnt"&gt;24
+&lt;/span&gt;&lt;span class="lnt"&gt;25
+&lt;/span&gt;&lt;span class="lnt"&gt;26
+&lt;/span&gt;&lt;span class="lnt"&gt;27
+&lt;/span&gt;&lt;span class="lnt"&gt;28
+&lt;/span&gt;&lt;span class="lnt"&gt;29
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="o"&gt;//&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Routes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nd"&gt;@web.route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;index&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;render_template&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;index.html&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nd"&gt;@web.route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/begin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;methods&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;POST&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;begin_journey&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;warrior_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;form&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;warrior_name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;warrior_name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;redirect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url_for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;web.index&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;warrior_name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;warrior_name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;render_template&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;intro.html&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;warrior_name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;warrior_name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nd"&gt;@web.route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/flamedrake&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;flamedrake&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;warrior_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;warrior_name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;warrior_name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;redirect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url_for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;web.index&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;render_template&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;flamedrake.html&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;warrior_name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;warrior_name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nd"&gt;@web.route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/battle-report&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;methods&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;POST&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;battle_report&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;warrior_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;warrior_name&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Unknown Warrior&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;battle_duration&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;form&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;battle_duration&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;0&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;From the &lt;code&gt;begin_journey()&lt;/code&gt; function, we can tell that user input is being passed to a &lt;code&gt;render_template()&lt;/code&gt; which means that passing in our payload as our warrior name is a viable place to try for injection. At the same time, we can also tell that Jinja2 is the specific Flask template engine that we need to look up exploits for. We do our injection through the use of Burp Suite.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-burp-suite.png"
+width="1600"
+height="871"
+srcset="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-burp-suite_hu_fbe7fcbe18b4118f.png 480w, https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-burp-suite_hu_5a9443048450338e.png 1024w"
+loading="lazy"
+alt="Making use of Burp Suite’s Request Interceptor"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+&gt;&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a couple of payloads that can be used, but the one I used was &lt;code&gt;{{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}&lt;/code&gt;. Of course, this alone won&amp;rsquo;t actually solve our problem since you need to include the Linux command that will get us what we want.
+So we modify the &lt;code&gt;'id'&lt;/code&gt; part with a &lt;code&gt;'cat &amp;lt;file&amp;gt;'&lt;/code&gt; like this:
+&lt;code&gt;{{ self.init.globals.builtins.import('os').popen('cat /app/application flag.txt').read() }}&lt;/code&gt;.
+How do I find the directory and name of the file I wanted? By running the same thing with &lt;code&gt;ls&lt;/code&gt; and seeing files are available in the default (and subsequent) directories.
+After much wrestling with this, you eventually get the flag in the results screen:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-victory.png"
+width="1594"
+height="768"
+srcset="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-victory_hu_597426013babab33.png 480w, https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/tbf-victory_hu_76fd376f2a8bfef1.png 1024w"
+loading="lazy"
+alt="The results screen with our victory(?)"
+class="gallery-image"
+data-flex-grow="207"
+data-flex-basis="498px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Of course, a bit of the process (read: struggling) was omitted so it didn&amp;rsquo;t actually go this smoothly, but it was still quite fun. I also did a &lt;a class="link" href="https://github.com/hackthebox/cyber-apocalypse-2025/tree/main/web/web_whispers_of_the_moonbeam" target="_blank" rel="noopener"
+&gt;command injection challenge&lt;/a&gt; which was much easier but that&amp;rsquo;s not really worth writing about. There were also some AI prompt injection ones that I failed to do, but maybe one day I&amp;rsquo;ll get my revenge.&lt;/p&gt;</description></item><item><title>It's a Cyber Apocalypse! Capture The Flag (CTF) 2025</title><link>https://blog.tenkiame.org/p/cyber-apocalypse-2025/</link><pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/cyber-apocalypse-2025/</guid><description>&lt;img src="https://blog.tenkiame.org/p/cyber-apocalypse-2025/cyber-apocalypse-2025-cert.png" alt="Featured image of post It's a Cyber Apocalypse! Capture The Flag (CTF) 2025" /&gt;&lt;p&gt;This one comes a little late since it&amp;rsquo;s been two months after it ended, but I swear it&amp;rsquo;s because I was working another project.&lt;/p&gt;
+&lt;p&gt;Regardless, this event was a little special because my friend &lt;a class="link" href="https://nathan-ellison.com/" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Nathan&lt;/strong&gt;&lt;/a&gt; gathered up a bunch of folks from the NZ Hack the Box Discord channel and filled up the team. Because of that, our team did astonishingly well - a whopping 294th out of 8130 teams. It turns out two (or many, in this case) heads are in fact better than one.&lt;/p&gt;
+&lt;p&gt;My focus this time around was on a web challenge which involved exploiting an SSTI exploit. No, not a super sexually transmitted infection exploit, a Server-Side Template Injection exploit. I&amp;rsquo;ve put together a &lt;a class="link" href="https://blog.tenkiame.org/p/cyber-apocalypse-2025-write-up/" &gt;writeup&lt;/a&gt; as well (it&amp;rsquo;s got a boss battle against a dragon!).&lt;/p&gt;</description></item><item><title>HackTheBoo! Capture The Flag (CTF) 2024</title><link>https://blog.tenkiame.org/p/hack-the-boo-2024/</link><pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/hack-the-boo-2024/</guid><description>&lt;img src="https://blog.tenkiame.org/p/hack-the-boo-2024/HTBoo-Cert.png" alt="Featured image of post HackTheBoo! Capture The Flag (CTF) 2024" /&gt;&lt;p&gt;So in October, Hack The Box does an annual Halloween-themed CTF and one of my mates persuaded me to join this one shortly after I came back from an overseas trip. The CTF was split into a practice period and a real period.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t have much time for either CTF periods and they were quite short so I focused on learning a specific concept instead of accumulating points. I definitely had a lot of fun learning the methods that I got around to with my favourite one being JSON Web Token Forgery.
+I&amp;rsquo;ve included a &lt;a class="link" href="https://docs.google.com/document/d/1yPnN2TW7SeCPQxXedLZqcow3GqyBvULvu1mK_O5ZQ7A/edit?usp=sharing" target="_blank" rel="noopener"
+&gt;link&lt;/a&gt; to the small write-ups for the challenges I did so if anyone is interested.&lt;/p&gt;
+&lt;p&gt;Above this post is my certificate for competing in the real period. I also got a certificate for joining in the practice round too.&lt;/p&gt;
+&lt;p&gt;P.S. I dressed up as Steve Jobs this year for Halloween.&lt;/p&gt;</description></item><item><title>Makemore</title><link>https://blog.tenkiame.org/p/makemore/</link><pubDate>Tue, 09 Jul 2024 18:32:45 +1200</pubDate><guid>https://blog.tenkiame.org/p/makemore/</guid><description>&lt;img src="https://blog.tenkiame.org/p/makemore/makemore_preview.png" alt="Featured image of post Makemore" /&gt;&lt;p&gt;This project was a step in my journey to learn more about Artificial Intelligence (AI). It&amp;rsquo;s not quite as fancy as ChatGPT, but it&amp;rsquo;s still an AI model that uses deep learning aka a neural network.
+Makemore is the name of the model - it&amp;rsquo;s a model that&amp;rsquo;s trained on American names and the idea is that it can generalise and create &amp;ldquo;name-like&amp;rdquo; words.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s good to be educated on AI to understand that while it&amp;rsquo;s useful, its capabilities and use cases in the public space thus far have not warranted the evangelism it&amp;rsquo;s gotten, and in some ways it exacerbates the very problems that AI was meant to solve (e.g. getting rid of spam).&lt;/p&gt;
+&lt;p&gt;Anyways, link below has the process of me putting together Makemore - it&amp;rsquo;s not intended to be a guide so it&amp;rsquo;s not the nicest read I&amp;rsquo;ve written. The repo also has Jupyter notebooks that can be run to use it, but in the future I&amp;rsquo;ll look to make something more user-friendly and doesn&amp;rsquo;t require additional setup. I hope to create more AI models in the future, but my current focus is upskilling in software development.&lt;/p&gt;</description></item><item><title>Guess the Country</title><link>https://blog.tenkiame.org/p/guess-the-country/</link><pubDate>Mon, 08 Jul 2024 17:42:59 +1200</pubDate><guid>https://blog.tenkiame.org/p/guess-the-country/</guid><description>&lt;img src="https://blog.tenkiame.org/p/guess-the-country/world-36479_640.png" alt="Featured image of post Guess the Country" /&gt;&lt;p&gt;The goal of Guess the Country is, funnily enough, in the name. This was built during a time where I would do the Worldle on the daily. The most rewarding part was extracting all the different countries&amp;rsquo; svg images - this part was done using the C# HttpClient. Give it a try - a new country appears everytime you load the page 😊&lt;/p&gt;
+&lt;p&gt;[The image used is royalty-free from https://pixabay.com/vectors/world-geography-map-globe-earth-36479/]&lt;/p&gt;</description></item><item><title>Severed Sources</title><link>https://blog.tenkiame.org/p/severed-sources/</link><pubDate>Sun, 07 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/severed-sources/</guid><description>&lt;img src="https://blog.tenkiame.org/p/severed-sources/severed_sources_preview.png" alt="Featured image of post Severed Sources" /&gt;&lt;p&gt;This game was built in a weekend not long before the COVID lockdown happened. Our team was composed entirely of strangers, three of whom were programmers and one artist. Because of this imbalance, I ended up taking more of a QA and Project Management role in the team, but it was still a fun time.
+I still remember staying late with one of the other team members and building the title screen and opening sequence from scratch. I&amp;rsquo;m very proud of the transition that happens when you hit the start button. I also named the game!&lt;/p&gt;
+&lt;div&gt;
+&lt;iframe src="https://rigidseine.github.io/nzgamejam2020-Robot-squad/" width="100%" height="680px" title="severed-sources" scrolling="no" overflow="hidden" overflow-y="hidden" allowfullscreen="true"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Maze Roller</title><link>https://blog.tenkiame.org/p/maze-roller/</link><pubDate>Thu, 04 Jul 2024 22:59:13 +1200</pubDate><guid>https://blog.tenkiame.org/p/maze-roller/</guid><description>&lt;img src="https://blog.tenkiame.org/p/maze-roller/MazeRoller_preview.png" alt="Featured image of post Maze Roller" /&gt;&lt;p&gt;Maze Roller is a game where a player guides a ball from the start point to the goal point by rotating the maze a la the labyrinth marble game.
+The aim of this project was to implement an algorithm that procedurally generates a new maze on every game.
+The specific algorithm used for Maze Roller consisted of using quad-edges, a graph and its dual graph to build the maze, and depth-first search to traverse it.&lt;/p&gt;
+&lt;h4&gt;
+Click onto the game to take control. Use WASD keys to rotate the board and move the ball to the goal!
+&lt;/h4&gt;
+&lt;h4&gt;
+Press the 'r' key to reload the level and see the maze take on different forms.
+&lt;/h4&gt;
+&lt;div&gt;
+&lt;iframe src="https://rigidseine.github.io/MazeRoller/MazeGenBuild_1-1WebGL/" width="100%" height="680px" title="maze-gen" scrolling="no" overflow="hidden" allowfullscreen="true"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</description></item><item><title>Tenkiame</title><link>https://blog.tenkiame.org/p/tenkiame/</link><pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/tenkiame/</guid><description>&lt;img src="https://blog.tenkiame.org/p/tenkiame/TenkiAme_preview_03-07-2024.png" alt="Featured image of post Tenkiame" /&gt;&lt;p&gt;TenkiAme (pronounced ten-key-ah-meh) is a weather forecasting application that integrates with various APIs to provide weather and UV index information. You can access it at &lt;a class="link" href="https://tenkiame.org" target="_blank" rel="noopener"
+&gt;tenkiame.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I wanted to build this because of a couple of reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Weather apps feel like a good kind of app to tick off when it comes to building personal projects.&lt;/li&gt;
+&lt;li&gt;I also wanted an excuse to build a web app in C# - a language I&amp;rsquo;m fond of from my Unity days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest learnings came from setting up the web server and deploying the app, more so than calling the APIs which I originally thought was going to be the most valuable piece of knowledge.&lt;/p&gt;
+&lt;h2 id="licence"&gt;Licence
+&lt;/h2&gt;&lt;p&gt;This project is licensed under the MIT License.&lt;/p&gt;</description></item><item><title>HackTheBox Business Capture The Flag (CTF) 2024</title><link>https://blog.tenkiame.org/p/htb-business-ctf-2024/</link><pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/htb-business-ctf-2024/</guid><description>&lt;img src="https://blog.tenkiame.org/p/htb-business-ctf-2024/HTB_Cert.PNG" alt="Featured image of post HackTheBox Business Capture The Flag (CTF) 2024" /&gt;&lt;p&gt;In May 2024, our team of software developers and cybersecurity professionals from the Department of Corrections and NZ Police joined 943 others in the HackTheBox Business Capture The Flag(CTF) competition. Over half a week, we solved 20 challenging cybersecurity puzzles, each puzzle featuring a scenario themed around the Fallout video game series!&lt;/p&gt;
+&lt;p&gt;This competition was all about creative problem-solving and collaboration. Solving these challenges tested our problem-solving skills and taught us a few new tricks like XML entity inclusion, and mounting the file system in Windows Subsystem for Linux to find the system flag.&lt;/p&gt;
+&lt;p&gt;Participating in this event was a fun experience. We&amp;rsquo;re proud of our achievements and can&amp;rsquo;t wait for next year.
+Above this post is my certificate for competing.&lt;/p&gt;</description></item><item><title>Archives</title><link>https://blog.tenkiame.org/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/archives/</guid><description/></item><item><title>Links</title><link>https://blog.tenkiame.org/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/links/</guid><description>&lt;!-- To use this feature, add `links` section to frontmatter.
+This page's frontmatter:
+```yaml
+links:
+- title: GitHub
+description: GitHub is the world's largest software development platform.
+website: https://github.com
+image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+- title: TypeScript
+description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+website: https://www.typescriptlang.org
+image: ts-logo-128.jpg
+```
+`image` field accepts both local and external images. --&gt;</description></item><item><title>Search</title><link>https://blog.tenkiame.org/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/search/</guid><description/></item></channel></rss>
