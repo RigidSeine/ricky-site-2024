@@ -7,6 +7,7 @@ image: HTB_Cert_2025.PNG
 tags:
     - AI
     - CTF
+draft: true
 ---
 With the introduction of Generative AI comes a slew of cybersecurity vulnerabilities ready to be exploited by the public.
 
