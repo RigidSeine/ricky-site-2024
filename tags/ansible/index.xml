@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ansible on Ricky Leong</title><link>https://blog.tenkiame.org/tags/ansible/</link><description>Recent content in Ansible on Ricky Leong</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.tenkiame.org/tags/ansible/index.xml" rel="self" type="application/rss+xml"/><item><title>Server Migration with Ansible</title><link>https://blog.tenkiame.org/p/server-migration-with-ansible/</link><pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate><guid>https://blog.tenkiame.org/p/server-migration-with-ansible/</guid><description>&lt;img src="https://blog.tenkiame.org/p/server-migration-with-ansible/server-migration-bindle.png" alt="Featured image of post Server Migration with Ansible" /&gt;&lt;p&gt;A milestone in a series of migrations that I&amp;rsquo;m doing, but also a first foray into using Ansible!&lt;/p&gt;
+&lt;p&gt;I gotta say, this Ansible stuff is pretty neat - especially if you make the most of the &lt;strong&gt;idempotent&lt;/strong&gt; nature of the technology.&lt;/p&gt;
+&lt;p&gt;What the heck is an idempotent, you may ask? It&amp;rsquo;s when you apply an operation multiple times without chaning the result. The simplest way to demonstrate it is with a little bit of maths.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you multiply any number with 0, you&amp;rsquo;ll get 0.&lt;/li&gt;
+&lt;li&gt;If you multiply any number with 1, you&amp;rsquo;ll get that number again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And if you repeat these operations, you get the same result every time.&lt;br&gt;
+Hence, these operations are idempotent.&lt;/p&gt;
+&lt;p&gt;In the context of Ansible, the idea for your script is supply the state you want your component to be in so that when you re-run the script, you&amp;rsquo;ll either return to the state or nothing will change.&lt;/p&gt;
+&lt;p&gt;So I&amp;rsquo;ve gone ahead and created an Ansible playbook for the purpose of being able to move my server between cloud providers easily. In this case, I ditched Microsoft Azure for Akamai Linode with the idea of doing some cost-saving.&lt;/p&gt;
+&lt;p&gt;As part of this, I did also move Tenkiame to a docker container beforehand to really boost portability of my setup.&lt;/p&gt;
+&lt;p&gt;And since I figured my colleagues might have an interest in this, I also published an anonymised version of the repo I&amp;rsquo;m using.&lt;/p&gt;</description></item></channel></rss>
